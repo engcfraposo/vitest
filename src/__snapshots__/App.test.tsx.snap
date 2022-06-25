@@ -1,0 +1,11 @@
+// Vitest Snapshot v1
+
+exports[`Poderia renderizar o meu componente React com o texto 'hello word' 1`] = `
+<div
+  data-testid="container"
+>
+  <h1>
+    hello word
+  </h1>
+</div>
+`;
