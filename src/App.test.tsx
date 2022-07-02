@@ -55,6 +55,7 @@ it("Poderia renderizar o meu componente React com o texto 'hello word'", () => {
     expect(queryByTestId("logo")).toHaveAttribute("class", "App-logo")
     expect(queryByTestId("logo")).toHaveAttribute("alt", "logo")
     expect(queryByTestId("logo")).toHaveAttribute("src", logo)
+    
     expect(queryByTestId("title")).toHaveTextContent("Hello Vite + React!")
 })
 
