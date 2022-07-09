@@ -18,4 +18,10 @@ describe('Teste de fluxo da pagina de Home', () => {
     cy.get('#remove-count').click()
     cy.get("#count-div").should("contain", "1")
   })
+  //it("exemplo", () => {
+    //cy.get("#login").type("Ziriguidunho")
+    //cy.get("#password").type("safaf33455a")
+    //cy.get("#submit").submit()
+    //cy.get("form").should
+  //})
 })

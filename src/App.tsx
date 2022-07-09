@@ -4,6 +4,7 @@ import './App.css'
 import { useDispatch, useSelector } from 'react-redux'
 import { RootState } from './store'
 import { addCount, removeCount } from './store/count'
+import Button from './components/Button'
 
 
 function App() {
@@ -27,13 +28,13 @@ function App() {
         <img data-testid="logo"src={logo} className="App-logo" alt="logo" />
         <p data-testid="title">Hello Vite + React!</p>
         <p style={{display:'flex'}}>
-          <button id="remove-count"type="button" onClick={() => handleChangeValue("-")}>
+          <Button variant="primary" size="small" id="remove-count"type="button" onClick={() => handleChangeValue("-")}>
             -
-          </button>
+          </Button>
           <div id="count-div">{count.value}</div>
-          <button id="add-count" type="button" onClick={() => handleChangeValue("+")}>
+          <Button variant="secondary" size="small"id="add-count" type="button" onClick={() => handleChangeValue("+")}>
             +
-          </button>
+          </Button>
         </p>
         <p>
           Edit <code>App.tsx</code> and save to test HMR updates.
