@@ -27,11 +27,11 @@ function App() {
         <img data-testid="logo"src={logo} className="App-logo" alt="logo" />
         <p data-testid="title">Hello Vite + React!</p>
         <p style={{display:'flex'}}>
-          <button type="button" onClick={() => handleChangeValue("-")}>
+          <button id="remove-count"type="button" onClick={() => handleChangeValue("-")}>
             -
           </button>
-          <div>{count.value}</div>
-          <button type="button" onClick={() => handleChangeValue("+")}>
+          <div id="count-div">{count.value}</div>
+          <button id="add-count" type="button" onClick={() => handleChangeValue("+")}>
             +
           </button>
         </p>
